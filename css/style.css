@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+html{
+    font-size: 62.5%;
+}
+    
+body{
+    width: 100%;
+    height: 100vh;
+    font-size: 2rem;
+    background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#resultat{
+    width: 60rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    color: yellow;
+    font: bold 3rem arial, sans-serif;
+    background-color: #565656;
+    color: transparent;
+    text-shadow: 2px 2px 3px rgba(255,255,255,0.5);
+    -webkit-background-clip: text;
+       -moz-background-clip: text;
+            background-clip: text;
+}
+
+#result{
+    width: 50rem;
+}
+
+.btnBox{
+    width: 80px;
+    height: 100px;
+    font-size: 1.8rem;
+    margin: 2rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 0 8px 4px blue;
+    padding: 1rem;
+}
+
+.btnBox:hover{
+    background-image: linear-gradient(to bottom, #37ecba 0%, #72afd3 100%);
+}
+
+#btnReplay{
+    padding: 1rem;
+    background-color: black;
+    color: white;
+}
+
+@media screen and (max-width: 600px){
+    #resultat{
+        flex-direction: column;
+    }
+
+    #resultat{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #result{
+        width: 100%;
+    }
+
+    .btnBox{
+        width: 60px;
+        height: 60px;
+    }
+}
